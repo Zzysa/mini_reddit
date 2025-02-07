@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loginSection">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+            <button id="createAccountButton">Create an account</button>
+        </form>
+    </div>
+
+    <div id="userSection" style="display:none">
+        <h2>Welcome: <span id="loggedInUser"></span></h2>
+        <button id="logoutButton">Logout</button>
+        <button id="deleteAccountButton">Delete an account</button>
+
+        <h3>Create Post</h3>
+        <form id="createPostForm">
+            <input type="text" id="postContent" placeholder="Write a post..." required />
+            <button type="submit">Create Post</button>
+        </form>
+
+        <h3>Search Posts</h3>
+
+        <form id="searchForm">
+            <input type="text" id="searchExample" placeholder="Search for posts..." />
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="searchResults"></div>
+
+        <h3>Posts</h3>
+        <div id="postsContainer"></div>
+    </div>
+
+    <script src="app.js"></script>
+
+    </body>
+</html>
+
